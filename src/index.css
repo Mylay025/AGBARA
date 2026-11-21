@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --color-preto-ancestral: #171713;
+  --color-verde-floresta: #174B2A;
+  --color-verde-folha: #77964A;
+  --color-vermelho-terroso: #A52B20;
+  --color-dourado-envelhecido: #D8BD83;
+  --color-areia-pergaminho: #F0E5C9;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-areia-pergaminho);
+    color: var(--color-preto-ancestral);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-editorial {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Textura suave de papel pergaminho / areia ancestral */
+.bg-parchment {
+  background-color: #F0E5C9;
+  background-image: radial-gradient(#D8BD83 0.65px, transparent 0.65px), radial-gradient(#77964A 0.45px, #F0E5C9 0.45px);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+}
+
+.bg-parchment-clean {
+  background-color: #F0E5C9;
+}
+
+.bg-parchment-light {
+  background-color: #F7F1E1;
+}
+
+.bg-parchment-card {
+  background-color: #FAF6ED;
+}
+
+/* Scrollbar com a paleta AGbára */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E8DCC0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #174B2A;
+  border-radius: 9999px;
+  border: 1px solid #D8BD83;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #77964A;
+}
+
+/* Barra de rolagem horizontal discreta para filtros */
+.scrollbar-subtle {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(23, 75, 42, 0.4) rgba(216, 189, 131, 0.25);
+}
+
+.scrollbar-subtle::-webkit-scrollbar {
+  height: 5px;
+}
+
+.scrollbar-subtle::-webkit-scrollbar-track {
+  background: rgba(216, 189, 131, 0.25);
+  border-radius: 9999px;
+}
+
+.scrollbar-subtle::-webkit-scrollbar-thumb {
+  background: rgba(23, 75, 42, 0.4);
+  border-radius: 9999px;
+  border: none;
+}
+
+.scrollbar-subtle::-webkit-scrollbar-thumb:hover {
+  background: rgba(23, 75, 42, 0.65);
+}
+
+/* Barra de rolagem horizontal discreta para fundos escuros (Admin) */
+.scrollbar-subtle-dark {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(216, 189, 131, 0.48) rgba(216, 189, 131, 0.14);
+}
+
+.scrollbar-subtle-dark::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scrollbar-subtle-dark::-webkit-scrollbar-track {
+  background: rgba(216, 189, 131, 0.14);
+  border-radius: 9999px;
+}
+
+.scrollbar-subtle-dark::-webkit-scrollbar-thumb {
+  background: rgba(216, 189, 131, 0.48);
+  border-radius: 9999px;
+  border: none;
+}
+
+.scrollbar-subtle-dark::-webkit-scrollbar-thumb:hover {
+  background: rgba(216, 189, 131, 0.75);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Grafismo sutil de borda étnica / ancestral */
+.border-ethnic {
+  border-color: #D8BD83;
+  box-shadow: 0 1px 3px rgba(23, 23, 19, 0.08);
+}

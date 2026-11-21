@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="AGBÁRA – Ancestralidade Viva">
+  <defs>
+    <radialGradient id="agbara-bg" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#1E5F36" />
+      <stop offset="70%" stop-color="#174B2A" />
+      <stop offset="100%" stop-color="#112E1B" />
+    </radialGradient>
+    <linearGradient id="agbara-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0E5C9" />
+      <stop offset="50%" stop-color="#D8BD83" />
+      <stop offset="100%" stop-color="#B99A5B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo circular ancestral -->
+  <circle cx="32" cy="32" r="30" fill="#171713" />
+  <circle cx="32" cy="32" r="27" fill="url(#agbara-bg)" stroke="url(#agbara-gold)" stroke-width="2.4" />
+
+  <!-- Grafismo sagrado em losango -->
+  <path
+    d="M32 9 L55 32 L32 55 L9 32 Z"
+    fill="none"
+    stroke="#D8BD83"
+    stroke-width="1.2"
+    stroke-opacity="0.45"
+  />
+
+  <!-- Folha sagrada superior (Ancestralidade / Floresta) -->
+  <path
+    d="M32 13 C35.5 17 36.2 21.2 32 24.5 C27.8 21.2 28.5 17 32 13 Z"
+    fill="#77964A"
+    stroke="#F0E5C9"
+    stroke-width="1.1"
+  />
+
+  <!-- Monograma estilizado "A" de AGbára -->
+  <path
+    d="M32 22 L44.5 47 H38.8 L36 40.8 H28 L25.2 47 H19.5 L32 22 Z M32 30.2 L29.5 36.5 H34.5 L32 30.2 Z"
+    fill="url(#agbara-gold)"
+  />
+
+  <!-- Acento terroso sutil na base -->
+  <circle cx="32" cy="50.5" r="2" fill="#A52B20" stroke="#D8BD83" stroke-width="0.8" />
+</svg>

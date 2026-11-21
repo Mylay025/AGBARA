@@ -1,0 +1,8 @@
+{
+  "name": "AGBÁRA – Ancestralidade Viva",
+  "description": "Site profissional de vendas e catálogo interativo para a marca AGBÁRA – Ancestralidade Viva. Catálogo local de medicinas da floresta, artesanato ancestral e gerador de orçamentos integrado ao WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
